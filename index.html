@@ -42,6 +42,40 @@
       padding-left: 1.2rem;
     }
 
+    /* --- Neu: Karten für die Vertiefungsrichtungen --- */
+
+    .karte {
+      /* Eine Box mit Rahmen, damit jeder Pfad optisch zusammengehört. */
+      border: 1px solid #e0e0dc;
+      border-radius: 8px;
+      /* border-radius = abgerundete Ecken */
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+      background: #ffffff;
+    }
+
+    .karte h3 {
+      margin-top: 0;
+    }
+
+    .modul {
+      /* Kleine graue "Pillen" für die Modulnamen. */
+      display: inline-block;
+      background: #f0f0ec;
+      border-radius: 999px;
+      padding: 0.15rem 0.7rem;
+      margin: 0.15rem 0.1rem;
+      font-size: 0.85rem;
+    }
+
+    .hinweis {
+      /* Gelber Kasten für den Quellen-Hinweis. */
+      background: #fff8e6;
+      border-left: 3px solid #e0b64d;
+      padding: 0.75rem 1rem;
+      font-size: 0.9rem;
+    }
+
     footer {
       margin-top: 3rem;
       font-size: 0.9rem;
@@ -72,10 +106,99 @@
     <li>Es auf GitHub hochladen</li>
   </ul>
 
-  <h2>Nächstes Projekt</h2>
+  <h2>Mein Projekt: Vertiefungsrichtungen im Master Mathematik (TUM)</h2>
   <p>
-    Eine Übersicht über die mathematischen Vertiefungsrichtungen
-    im Masterstudium Mathematik an der TUM.
+    Der Master Mathematik an der TUM umfasst <strong>120 ECTS in 4 Semestern</strong>.
+    Man kann sich für einen von sechs offiziellen Schwerpunkten entscheiden –
+    dieser erscheint später im Zeugnis – oder bewusst breit ohne Schwerpunkt studieren.
+  </p>
+
+  <p>Die sechs Schwerpunkte:</p>
+  <p>
+    <!-- Diese kleinen Pillen nutzen die CSS-Klasse .modul von oben. -->
+    <span class="modul">Analysis und PDE</span>
+    <span class="modul">Algebra und Geometrie</span>
+    <span class="modul">Wahrscheinlichkeitstheorie</span>
+    <span class="modul">Numerik und Wissenschaftliches Rechnen</span>
+    <span class="modul">Optimierung</span>
+    <span class="modul">Biomathematik und Biostatistik</span>
+  </p>
+
+  <h2>Schwerpunkt „Algebra und Geometrie“ im Detail</h2>
+  <p>
+    Dieser Schwerpunkt ist offiziell <em>ein</em> Schwerpunkt, teilt sich in der Praxis
+    aber in zwei Richtungen, die sich gut kombinieren lassen.
+  </p>
+
+  <!-- Karte 1: Algebra -->
+  <div class="karte">
+    <!-- div = ein reiner Container, um Inhalte zu gruppieren. -->
+    <h3>Pfad A: Algebra, Zahlentheorie &amp; algebraische Geometrie</h3>
+    <p>
+      Strukturen statt Rechnen: Ringe, Körper, Varietäten. Stark verbunden mit
+      Kryptographie und mathematischer Physik.
+    </p>
+    <p>
+      <span class="modul">Algebra 2: Commutative Algebra [MA5120]</span>
+      <span class="modul">Algebraic Geometry I / II</span>
+      <span class="modul">Algebraic Number Theory</span>
+      <span class="modul">Elliptic Curves in Cryptography [CIT413075]</span>
+      <span class="modul">Representation Theory</span>
+      <span class="modul">Algebraic Surfaces</span>
+    </p>
+    <p>
+      <strong>Lehrstühle:</strong> Kemper (Invariantentheorie), Liedtke (algebraische Flächen),
+      Panny (Kryptanalyse), Kus (Darstellungstheorie), Alim (Quantengeometrie),
+      Scheimbauer (höhere Kategorientheorie).
+    </p>
+    <p>
+      <strong>Wohin führt das?</strong> Promotion in reiner Mathematik, Kryptographie
+      und IT-Sicherheit, Coding Theory.
+    </p>
+  </div>
+
+  <!-- Karte 2: Geometrie -->
+  <div class="karte">
+    <h3>Pfad B: Geometrie &amp; Topologie</h3>
+    <p>
+      Formen, Räume und ihre Invarianten – an der TUM auffällig algorithmisch
+      und visuell geprägt.
+    </p>
+    <p>
+      <span class="modul">Differential Geometry</span>
+      <span class="modul">Discrete Differential Geometry</span>
+      <span class="modul">Projective Geometry</span>
+      <span class="modul">Topology</span>
+      <span class="modul">Applied and Computational Topology</span>
+      <span class="modul">Geometry and Visualization</span>
+    </p>
+    <p>
+      <strong>Lehrstühle:</strong> Hoffmann (diskrete Differentialgeometrie),
+      Bauer (angewandte Topologie / TDA), Richter-Gebert (Geometrie und Visualisierung),
+      Scheimbauer (Topologie).
+    </p>
+    <p>
+      <strong>Wohin führt das?</strong> Topological Data Analysis, Computergrafik und
+      Geometry Processing, Visualisierung, Promotion.
+    </p>
+  </div>
+
+  <h2>Was sonst noch zum Master gehört</h2>
+  <ul>
+    <li>Mathematische Module (der Kern, hier wird der Schwerpunkt gesetzt)</li>
+    <li>Hauptseminar, meist im 3. Semester</li>
+    <li>Berufspraktikum: 4 Wochen plus begleitendes Seminar</li>
+    <li>Optionales Nebenfach: Informatik, Physik, Chemie, Wirtschaft …</li>
+    <li>Überfachliche Wahlmodule (Soft Skills, Sprachen)</li>
+    <li>Masterarbeit: 6 Monate im 4. Semester</li>
+  </ul>
+
+  <p class="hinweis">
+    <strong>Hinweis zu den Quellen:</strong> Zusammengetragen aus der TUM-CIT-Seite zum
+    Master Mathematik, den Seiten der Forschungsgruppen Algebra sowie Geometrie und Topologie
+    und dem Vorlesungsverzeichnis der Algebra-Gruppe für das Wintersemester 2026/27.
+    Verbindlich sind allein die Fachprüfungs- und Studienordnung sowie das Modulhandbuch
+    in TUMonline – dort vor der Fächerwahl noch einmal prüfen.
   </p>
 
   <footer>
