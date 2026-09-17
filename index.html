@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- This line tells the browser: what follows is a modern HTML page. -->
+<html lang="de">
+
+<head>
+  <!-- The <head> holds information ABOUT the page. None of it is visible on the page itself. -->
+  <meta charset="UTF-8">
+  <!-- charset=UTF-8 makes sure that ä, ö, ü and ß display correctly. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- This line makes the page look right on a phone. -->
+  <title>Hallo von Sarah</title>
+  <!-- The title shows up in the browser tab. -->
+
+  <style>
+    /* This is CSS. It controls how things LOOK. */
+
+    body {
+      /* body = the whole visible page */
+      font-family: system-ui, sans-serif;
+      /* max-width keeps the text from getting uncomfortably wide on a big screen */
+      max-width: 40rem;
+      /* margin: 4rem auto = space at the top, and "auto" centers the page */
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+      line-height: 1.6;
+      color: #1a1a1a;
+      background: #fdfdfb;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .subtitle {
+      /* This styles anything marked with class="subtitle" */
+      color: #6b6b6b;
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #6b6b6b;
+      border-top: 1px solid #e0e0dc;
+      padding-top: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Everything inside <body> is what you actually SEE in the browser. -->
+
+  <h1>Hallo Welt! 👋</h1>
+  <!-- h1 = the main heading. There should only be one per page. -->
+
+  <p class="subtitle">Meine erste eigene Webseite.</p>
+  <!-- p = paragraph (a block of text) -->
+
+  <h2>Was ich heute gelernt habe</h2>
+  <!-- h2 = a smaller heading, for a section -->
+
+  <ul>
+    <!-- ul = unordered list, li = list item -->
+    <li>Eine HTML-Datei erstellen</li>
+    <li>Sie mit CSS gestalten</li>
+    <li>Das Projekt mit Git speichern</li>
+    <li>Es auf GitHub hochladen</li>
+  </ul>
+
+  <h2>Nächstes Projekt</h2>
+  <p>
+    Eine Übersicht über die mathematischen Vertiefungsrichtungen
+    im Masterstudium Mathematik an der TUM.
+  </p>
+
+  <footer>
+    Gebaut am 17. September 2026 · Sarah Götz
+  </footer>
+
+</body>
+
+</html>
